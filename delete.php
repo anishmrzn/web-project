@@ -9,7 +9,7 @@ if (isset($_GET['id'])) {
 
     if ($stmt->execute()) {
         echo "Product deleted successfully";
-        header('Location: index.php'); // Redirect to the homepage
+        header('Location: index.php'); 
         exit();
     } else {
         echo "Error: " . $stmt->error;
